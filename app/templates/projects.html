@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+{% block content %}
+<h2>Мои проекты</h2>
+<ul>
+    {% for project in projects %}
+        <li>
+            <strong>{{ project.title }}</strong><br>
+            {{ project.description }}<br>
+            <a href="{{ project.link }}" target="_blank">Смотреть</a>
+        </li>
+    {% endfor %}
+</ul>
+{% endblock %}

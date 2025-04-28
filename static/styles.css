@@ -1,0 +1,9 @@
+body {
+    font-family: sans-serif;
+    max-width: 800px;
+    margin: auto;
+    padding: 1rem;
+    background-color: #111;
+    color: #eee;
+}
+a { color: #81d4fa; }
