@@ -2,7 +2,7 @@
 /.venv/
 /venv/
 /.idea/
-/app/__pycache__/
+app/__pycache__/
 app/.env
 app/routes/__pycache__/
 app/utils/__pycache__/
