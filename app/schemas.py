@@ -1,7 +1,6 @@
 from pydantic import BaseModel, Field
 
 class ProjectCreate(BaseModel):
-    user_id: int
     title: str
     description: str
     link: str

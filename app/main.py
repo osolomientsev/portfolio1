@@ -2,10 +2,11 @@ from fastapi import FastAPI
 from fastapi.staticfiles import StaticFiles
 from fastapi.templating import Jinja2Templates
 #from app.routes.routes import router
-from app.routes.projects import router
-from app.routes.users import router
+#from app.routes.projects import router
+#from app.routes.users import router
 from .database import init_db
 from app.routes import project_router, user_router, auth
+#from app.auth import get_current_user
 app = FastAPI(
     title="Alex Projects",
     description="API for portfolio managment",

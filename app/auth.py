@@ -6,7 +6,7 @@ from app.models import Users
 from app.utils.tokens import verify_token
 
 
-oauth2_scheme = OAuth2PasswordBearer(tokenUrl="login")
+oauth2_scheme = OAuth2PasswordBearer(tokenUrl="/login")
 
 def get_current_user(token: str = Depends(oauth2_scheme), db: Session = Depends(get_db)):
     user_id = verify_token(token)

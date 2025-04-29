@@ -1,10 +1,10 @@
 import requests as r
-from sqlalchemy.testing.provision import update_db_opts
+#from sqlalchemy.testing.provision import update_db_opts
 
 
 def add_project():
     data = {"user_id":1,"title": "some test title", "description": "some test descrition", "link":"some test link"}
-    response = r.post("http://127.0.0.1:8000/add_project", json=data)
+    response = r.post("http://127.0.0.1:8000/projects", json=data)
     print(response.text)
     print(response.status_code)
 
@@ -35,4 +35,4 @@ def update_user():
     print(response.status_code)
 
 if __name__ == "__main__":
-    update_user()
+    add_project()

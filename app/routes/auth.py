@@ -8,7 +8,7 @@ from app.utils.hashing import verify_password
 from app.utils.tokens import create_access_token
 
 router = APIRouter(prefix="/login", tags=["Auth"])
-#router = APIRouter()
+
 @router.post("")
 def login(data: LoginUser, db: Session = Depends(get_db)):
     user = db.query(Users).filter(Users.user_mail == data.user_mail).first()
