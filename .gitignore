@@ -7,3 +7,4 @@ app/.env
 app/routes/__pycache__/
 app/utils/__pycache__/
 
+/restart_app.py
